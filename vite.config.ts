@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
 
   define: {
-    global: "window", // 🔥 THIS FIXES IT PROPERLY
+    global: "window", 
   },
 })
 
