@@ -16,7 +16,7 @@ export const connectWebSocket = (
   const token = localStorage.getItem("token");
 
   const socket = new SockJS(
-    `http://localhost:8080/ws?token=${token}`
+    `${import.meta.env.VITE_WS_BASE_URL}/ws?token=${token}`
   );
 
   stompClient = new Client({
